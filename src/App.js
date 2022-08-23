@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { teal } from "@mui/material/colors";
+import { Toolbar } from "@mui/material";
+import BackgroundAnimation from "./components/UI/Animations/BackgroundAnimation";
+import Header from "./components/Layout/Header/Header";
+import Footer from "./components/Layout/Footer/Footer/Footer";
+import Content from "./components/Layout/Content/Content";
+
+const theme = createTheme({
+  palette: {
+    primary: teal,
+    secondary: {
+      main: "#ff9800",
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-3xl font-bold underline">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <BackgroundAnimation />
+        <Header/>
+        <Content />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
