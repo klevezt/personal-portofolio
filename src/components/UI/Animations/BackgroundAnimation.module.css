@@ -22,7 +22,7 @@ ul#shape li {
     width: 40px;
     height: 40px;
     background-color: teal;
-    bottom: 0px;
+    bottom: -200px;
 
     animation: floating 25s infinite linear;
 
