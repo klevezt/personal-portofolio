@@ -7,6 +7,7 @@ import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer/Footer";
 import Content from "./components/Layout/Content/Content";
 
+
 const theme = createTheme({
   palette: {
     primary: teal,

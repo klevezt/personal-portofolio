@@ -15,12 +15,12 @@ const PersonalDescription = () => {
 
   return (
     <article className="leading-10">
+      <hr className="my-6 opacity-20" />
       Dear visitor, welcome to my personal portofolio.
       <br />
       Here, you can find all the information you need to know about me , along
-      with all the projects I have worked on.
-      <hr className="my-6 opacity-20" />
-      My name is <strong>Klevest Palucaj</strong> and I was born in Albania
+      with all the projects I have worked on. <br />My name is{" "}
+      <strong>Klevest Palucaj</strong> and I was born in Albania
       <img
         src={albanianFlag}
         alt="albanian-flag"
@@ -51,7 +51,6 @@ const PersonalDescription = () => {
       </a>
       .
       <br />
-      
     </article>
   );
 };

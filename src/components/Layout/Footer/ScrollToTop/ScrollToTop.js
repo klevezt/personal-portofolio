@@ -19,7 +19,7 @@ const ScrollToTop = ({ children, window }) => {
     if (anchor) {
       anchor.scrollIntoView({
         behavior: "smooth",
-        block: "end"
+        block: "start"
       });
     }
   };

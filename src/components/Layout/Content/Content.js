@@ -7,12 +7,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import freelanceIcon from "../../../freelancer-icon.svg";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import EducationDescription from "./EducationDescription";
 
 const Content = () => {
   return (
     <Container maxWidth="xl" className="pt-20 mt-5">
       <div className="row">
-        <div className="col-9">
+        <div className="col-12 col-md-9 order-2 order-md-1">
           <MainBlock>
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
               about me
@@ -21,12 +22,12 @@ const Content = () => {
           </MainBlock>
           <MainBlock>
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
-              Projects
+              Education
             </h2>
-            <PersonalDescription />
+            <EducationDescription />
           </MainBlock>
         </div>
-        <div className="col-3 offset-0">
+        <div className="col-12 col-md-3 offset-0 order-1 order-md-2">
           <MainBlock className="p-0 sticky top-20 ">
             <img src={dummy} alt="profile" />
             <div className="text-center m-0 py-4">
@@ -77,7 +78,6 @@ const Content = () => {
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
               Projects
             </h2>
-            <PersonalDescription />
           </MainBlock>
         </div>
       </div>
