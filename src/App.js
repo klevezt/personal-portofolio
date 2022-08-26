@@ -5,8 +5,9 @@ import { Toolbar } from "@mui/material";
 import BackgroundAnimation from "./components/UI/Animations/BackgroundAnimation";
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer/Footer";
-import Content from "./components/Layout/Content/Content";
-
+import { Route, Routes } from "react-router-dom";
+import About from "./components/Layout/Content/About";
+import Home from "./components/Layout/Content/Home";
 
 const theme = createTheme({
   palette: {
@@ -22,8 +23,11 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="app">
         <BackgroundAnimation />
-        <Header/>
-        <Content />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
         <Footer />
       </div>
     </ThemeProvider>

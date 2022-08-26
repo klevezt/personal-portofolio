@@ -9,7 +9,7 @@ import freelanceIcon from "../../../freelancer-icon.svg";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import EducationDescription from "./EducationDescription";
 
-const Content = () => {
+const About = () => {
   return (
     <Container maxWidth="xl" className="pt-20 mt-5">
       <div className="row">
@@ -86,4 +86,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default About;

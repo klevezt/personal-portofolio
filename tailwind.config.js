@@ -7,6 +7,9 @@ module.exports = {
       "1/3": "33%",
     },
     extend: {
+      colors: {
+        black: "#000"
+      },
       spacing: {
         128: "32rem",
         256: "64rem",
