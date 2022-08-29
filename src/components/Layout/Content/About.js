@@ -76,7 +76,7 @@ const About = () => {
         <div className="col-12">
           <MainBlock>
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
-              Projects
+              Licenses & certifications
             </h2>
           </MainBlock>
         </div>

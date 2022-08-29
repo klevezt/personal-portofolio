@@ -1,0 +1,12 @@
+.kp-index-slider-wrapper{max-width: 50%;width: 50px;}
+.kp-index-slider-wrapper::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.60;
+    z-index: 0;
+}
