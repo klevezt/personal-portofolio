@@ -38,22 +38,23 @@ const Home = () => {
 
   return (
     <>
-      <div
-        style={{
-          // marginTop: "20px",
-          position: "relative",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "100vh",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundImage: "url(daniel-josef-AMssSjUaTY4-unsplash.jpg)",
-          zIndex: "-1"
-        }}
-        alt="index-banner"
-      >
+      <div className="relative">
+        <div
+          style={{
+            // marginTop: "20px",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+            height: "100vh",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundImage: "url(daniel-josef-AMssSjUaTY4-unsplash.jpg)",
+            zIndex: "-1",
+          }}
+          alt="index-banner"
+        ></div>
         <IndexCarousel />
       </div>
+
       <Container maxWidth="xl" className="pt-20 ">
         <div className="row">
           <div className="col-12">

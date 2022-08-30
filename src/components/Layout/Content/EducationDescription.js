@@ -54,7 +54,7 @@ const EducationDescription = () => {
           href="https://dspace.uowm.gr/xmlui/handle/123456789/2351"
           target="_blank"
           rel="noreferrer"
-          className="no-underline block mt-2"
+          className="no-underline block mt-2 w-max"
         >
           <Button variant="outlined" endIcon={<OpenInNewIcon />}>
             <strong>Find it here</strong>
