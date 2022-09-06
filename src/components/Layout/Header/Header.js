@@ -31,7 +31,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink
-                    to={"/about"}
+                    to={"/projects"}
                     className="mx-2 text-slate-50 hover:text-black no-underline "
                   >
                     My Projects

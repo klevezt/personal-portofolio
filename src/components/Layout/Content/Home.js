@@ -41,11 +41,10 @@ const Home = () => {
     <>
       <div className="relative">
         <div
+          className="h-[100vh]"
           style={{
-            // marginTop: "20px",
             backgroundRepeat: "no-repeat",
             width: "100%",
-            height: "100vh",
             backgroundSize: "cover",
             backgroundPosition: "center center",
             backgroundImage: "url(daniel-josef-AMssSjUaTY4-unsplash.jpg)",

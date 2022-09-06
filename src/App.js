@@ -8,6 +8,7 @@ import Footer from "./components/Layout/Footer/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import About from "./components/Layout/Content/About";
 import Home from "./components/Layout/Content/Home";
+import Projects from "./components/Layout/Content/Projects";
 
 const theme = createTheme({
   palette: {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </div>
