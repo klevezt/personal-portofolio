@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Toolbar } from "@mui/material";
+import { Button, Container, Toolbar } from "@mui/material";
 import MainBlock from "../../hoc/MainBlock";
 import PersonalDescription from "./PersonalDescription";
 import ProjectCard from "../../UI/Cards/ProjectCard";
 import IndexCarousel from "./IndexCarousel";
+import { NavLink } from "react-router-dom";
 
 const projects = [
   {
@@ -65,6 +66,15 @@ const Home = () => {
               <hr className="my-6 opacity-20" />
 
               <div className="row">{allProjects}</div>
+              <div className="row mt-4">
+                <NavLink to="/" className="no-underline d-flex justify-center m-auto w-auto">
+                  <Button variant="contained" className="">
+                    <strong className="uppercase leading-normal">
+                      View all projects
+                    </strong>
+                  </Button>
+                </NavLink>
+              </div>
             </MainBlock>
           </div>
         </div>

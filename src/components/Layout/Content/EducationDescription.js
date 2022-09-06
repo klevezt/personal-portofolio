@@ -64,7 +64,7 @@ const EducationDescription = () => {
       <hr className="my-6 opacity-60 text-teal-600" />
       <p>
         On 2020, I graduated from the university with my final grade being{" "}
-        <strong>7.5</strong> .
+        <strong>7,5</strong>.
       </p>
     </article>
   );

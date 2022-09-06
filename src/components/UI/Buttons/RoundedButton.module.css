@@ -1,0 +1,11 @@
+.rounded-button{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+.rounded-button:hover{
+    cursor: pointer;
+}

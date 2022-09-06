@@ -1,27 +1,19 @@
 import { Box, Fade, useScrollTrigger } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 
-const ScrollToTop = ({ children, window }) => {
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
+const ScrollToTop = ({ children }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
+    target: window,
     disableHysteresis: true,
     threshold: 100,
   });
 
-  const handleClick = (event) => {
-    const anchor = (event.target.ownerDocument || document).querySelector(
-      "#back-to-top-anchor"
-    );
-
-    if (anchor) {
-      anchor.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
+  const handleClick = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
   return (

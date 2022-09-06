@@ -1,0 +1,28 @@
+.thumbnail-wrapper{
+    position: relative;
+}
+
+.thumbnail-wrapper span {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #009688;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.thumbnail-wrapper:hover span{
+    display: block;
+    cursor: pointer;
+}
+.thumbnail-wrapper:hover::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+}
