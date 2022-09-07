@@ -1,13 +1,14 @@
 import { Close } from "@mui/icons-material";
 import { Button, Fade, Backdrop, Modal } from "@mui/material";
-import React from "react";
+import React, { Fragment } from "react";
 import reactDom from "react-dom";
 import { NavLink } from "react-router-dom";
 import RoundedButton from "../Buttons/RoundedButton";
 import styles from "./ProjectCard.module.css";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
+import PopoverUI from "../Popover/Popover";
 
-const ProjectCard = ({ title, demo, thumbnail }) => {
+const ProjectCard = ({ title, demo, thumbnail, hasBadges, badges }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -37,7 +38,7 @@ const ProjectCard = ({ title, demo, thumbnail }) => {
             className="bg-rose-600 text-white border-2 border-white hover:bg-rose-700"
             onClick={handleClose}
           >
-             <Close />
+            <Close />
           </RoundedButton>
         </div>
       </Fade>
@@ -46,12 +47,30 @@ const ProjectCard = ({ title, demo, thumbnail }) => {
   );
 
   return (
-    <div className="p-8 bg-white rounded border-2 border-teal-500 shadow ">
-      <NavLink to="/" className="no-underline w-auto">
-        <h2 className="text-2xl mb-4 text-teal-600 uppercase underline underline-offset-8 w-auto">
-          {title}
-        </h2>
-      </NavLink>
+    <div className="p-8 bg-white rounded border-teal-500 shadow ">
+      <div className="flex flex-wrap">
+        <NavLink to="/" className="no-underline w-auto">
+          <h2 className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto">
+            {title}
+          </h2>
+        </NavLink>
+        {hasBadges && (
+          <div className="inline-flex items-center mb-3 flex-wrap">
+            {badges?.map((badge, i) => {
+              return (
+                <Fragment key={i}>
+                  <PopoverUI
+                    title={badge.title}
+                    src={badge.src}
+                    id={badge.id}
+                    theme={badge.theme}
+                  />
+                </Fragment>
+              );
+            })}
+          </div>
+        )}
+      </div>
       <div className={styles["thumbnail-wrapper"]} onClick={handleOpen}>
         <span>
           <ZoomOutMapIcon />
@@ -60,7 +79,7 @@ const ProjectCard = ({ title, demo, thumbnail }) => {
       </div>
       <a href={demo} className="no-underline" rel="noreferrer" target="_blank">
         <Button variant="outlined">
-          <strong className="uppercase leading-normal">demo</strong>
+          <strong className="uppercase leading-normal">website</strong>
         </Button>
       </a>
       {/* <NavLink to="/" className="no-underline">

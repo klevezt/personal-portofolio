@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const ProjectAirflix = () => {
+const ProjectAirflix = ({ project }) => {
   return (
-    <div>ProjectAirflix</div>
-  )
-}
+    <div className="col-12 col-sm-6 col-md-4">
+      Content
+    </div>
+  );
+};
 
-export default ProjectAirflix
+export default ProjectAirflix;

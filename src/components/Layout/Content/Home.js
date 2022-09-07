@@ -1,31 +1,13 @@
 import React from "react";
 import { Button, Container, Toolbar } from "@mui/material";
 import MainBlock from "../../hoc/MainBlock";
-import PersonalDescription from "./PersonalDescription";
 import ProjectCard from "../../UI/Cards/ProjectCard";
 import IndexCarousel from "./IndexCarousel";
 import { NavLink } from "react-router-dom";
-
-const projects = [
-  {
-    title: "Airflix",
-    demo: "https://airflix.herokuapp.com",
-    thumbnail: "airflix.jpg",
-  },
-  {
-    title: "E-shop Clone",
-    demo: "https://e-shop-clone.web.app/",
-    thumbnail: "eshop.jpg",
-  },
-  {
-    title: "Netflix Clone",
-    demo: "https://kplc-netflix-clone.web.app/",
-    thumbnail: "netflix.jpg",
-  },
-];
+import { HomeProjects } from "../../_constants/projects";
 
 const Home = () => {
-  const allProjects = projects.map((project, i) => {
+  const allProjects = HomeProjects.map((project, i) => {
     return (
       <div className="col-12 col-sm-6 col-md-4" key={i}>
         <ProjectCard
@@ -66,7 +48,7 @@ const Home = () => {
 
               <div className="row">{allProjects}</div>
               <div className="row mt-4">
-                <NavLink to="/" className="no-underline d-flex justify-center m-auto w-auto">
+                <NavLink to="/projects" className="no-underline d-flex justify-center m-auto w-auto">
                   <Button variant="contained" className="">
                     <strong className="uppercase leading-normal">
                       View all projects
