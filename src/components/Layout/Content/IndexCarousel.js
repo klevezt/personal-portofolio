@@ -64,9 +64,9 @@ function IndexCarousel() {
   return (
     <Box className={styles["kp-index-slider-wrapper"]}>
       <div className="absolute top-32 left-[5vw] right-[5vw] text-center md:left-1/2 md:-translate-x-1/2 h-auto text-white font-custom ">
-        <h1 className="text-5xl sm:text-7xl md:text-6vw">Make it work.</h1>
-        <h1 className="text-5xl sm:text-7xl md:text-6vw">Make it right.</h1>
-        <h1 className="text-5xl sm:text-7xl md:text-6vw">Make it fast.</h1>
+        <h1 className="text-5xl sm:text-6xl md:text-6vw">Make it work.</h1>
+        <h1 className="text-5xl sm:text-6xl md:text-6vw">Make it right.</h1>
+        <h1 className="text-5xl sm:text-6xl md:text-6vw">Make it fast.</h1>
       </div>
 
       <div className="absolute bottom-0 left-[5vw] md:left-1/4 right-[5vw] md:right-1/4 h-auto text-white">
@@ -77,13 +77,13 @@ function IndexCarousel() {
           pause={false}
         >
           {images.map((step, index) => (
-            <Carousel.Item key={index} className="min-h-[300px]">
+            <Carousel.Item key={index} className="min-h-[250px]">
               <div className="flex justify-center items-center flex-col md:flex-row">
                 <img
                   src={step.imgPath}
                   alt={step.label}
                   style={{ width: 120, objectFit: "contain" }}
-                  className="mb-5"
+                  className="mb-6 md:mb-0"
                 />
                 <div className="border-t-2 md:border-l-2 md:border-t-0 ml-8 p-8">
                   <h4>{step.label}</h4>

@@ -117,6 +117,25 @@ export const AllProjects = [
       },
     ],
   },
+  {
+    title: "Amazon Clone",
+    demo: "https://kplc-linkedin-clone.web.app/",
+    thumbnail: "amazon.jpg",
+    badges: [
+      {
+        title: "ReactJS",
+        src: "logo.svg",
+        id: "mouse-over-popover",
+        theme: "dark",
+      },
+      {
+        title: "Firebase",
+        src: "firebase.svg",
+        id: "mouse-over-popover2",
+        theme: "dark",
+      },
+    ],
+  },
 ];
 
 export const HomeProjects = [

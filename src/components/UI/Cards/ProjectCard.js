@@ -47,7 +47,7 @@ const ProjectCard = ({ title, demo, thumbnail, hasBadges, badges }) => {
   );
 
   return (
-    <div className="p-8 bg-white rounded border-teal-500 shadow ">
+    <div className="p-8 bg-white rounded border-teal-500 shadow min-h-[200px]">
       <div className="flex flex-wrap">
         <NavLink to="/" className="no-underline w-auto">
           <h2 className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto">

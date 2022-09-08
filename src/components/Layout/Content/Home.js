@@ -9,7 +9,7 @@ import { HomeProjects } from "../../_constants/projects";
 const Home = () => {
   const allProjects = HomeProjects.map((project, i) => {
     return (
-      <div className="col-12 col-sm-6 col-md-4" key={i}>
+      <div className="col-12 col-sm-6 col-lg-4" key={i}>
         <ProjectCard
           title={project.title}
           demo={project.demo}
