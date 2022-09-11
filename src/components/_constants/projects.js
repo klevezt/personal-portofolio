@@ -119,7 +119,7 @@ export const AllProjects = [
   },
   {
     title: "Amazon Clone",
-    demo: "https://kplc-linkedin-clone.web.app/",
+    demo: "https://kp-d5b02.web.app/",
     thumbnail: "amazon.jpg",
     badges: [
       {

@@ -8,12 +8,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import freelanceIcon from "../../../freelancer-icon.svg";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import EducationDescription from "./EducationDescription";
+import styles from "./About.module.css";
 
 const About = () => {
   return (
     <Container maxWidth="xl" className="pt-20 mt-5">
       <div className="row">
-        <div className="col-12 col-md-9 order-2 order-md-1">
+        <div className="col-12 col-md-8 col-lg-9">
           <MainBlock>
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
               about me
@@ -27,9 +28,13 @@ const About = () => {
             <EducationDescription />
           </MainBlock>
         </div>
-        <div className="col-12 col-md-3 offset-0 order-1 order-md-2">
-          <MainBlock className="p-0 sticky top-20 ">
-            <img src={dummy} alt="profile" />
+        <div className="col-12 col-md-4 col-lg-3">
+          <MainBlock className="p-0 sticky top-20 sm:w-3/4 md:w-full m-auto mb-5 ">
+            <img
+              src={dummy}
+              alt="profile"
+              className={styles["personal-image"]}
+            />
             <div className="text-center m-0 py-4">
               <h2>Klevest Palucaj</h2>
               <h5>Frontend - React Developer</h5>
@@ -38,8 +43,12 @@ const About = () => {
                 href="mailto:klevestpalucaj@gmail.com"
                 className="no-underline"
               >
-                <Button variant="outlined" startIcon={<AlternateEmailIcon />}>
-                  <strong className="lowercase">
+                <Button
+                  variant="outlined"
+                  startIcon={<AlternateEmailIcon />}
+                  className="break-all"
+                >
+                  <strong className="lowercase text-sm ">
                     klevestpalucaj@gmail.com
                   </strong>
                 </Button>
