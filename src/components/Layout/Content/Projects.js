@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <Container maxWidth="xl" className="py-20 mt-5">
       <MainBlock>
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between items-center">
           <h2 className="text-2xl font-bold text-teal-600 uppercase m-0">
             Projects
           </h2>
