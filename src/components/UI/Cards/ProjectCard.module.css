@@ -8,12 +8,19 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-color: #009688;
     color: white;
     padding: 7px;
     border-radius: 50%;
     border: 2px solid;
+    
 }
+
+.thumbnail-wrapper img{
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .thumbnail-wrapper:hover span{
     display: block;
     cursor: pointer;

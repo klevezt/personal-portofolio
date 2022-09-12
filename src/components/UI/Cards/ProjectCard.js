@@ -1,4 +1,4 @@
-import { Close } from "@mui/icons-material";
+import { Close, ReportGmailerrorred } from "@mui/icons-material";
 import { Button, Fade, Backdrop, Modal } from "@mui/material";
 import React, { Fragment } from "react";
 import reactDom from "react-dom";
@@ -8,7 +8,14 @@ import styles from "./ProjectCard.module.css";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 import PopoverUI from "../Popover/Popover";
 
-const ProjectCard = ({ title, demo, thumbnail, hasBadges, badges }) => {
+const ProjectCard = ({
+  title,
+  demo,
+  thumbnail,
+  hasBadges,
+  badges,
+  info = null,
+}) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -50,10 +57,20 @@ const ProjectCard = ({ title, demo, thumbnail, hasBadges, badges }) => {
     <div className="mb-3 p-2.5 md:p-6 bg-white rounded border-teal-500 shadow min-h-[200px]">
       <div className="flex flex-wrap">
         <NavLink to="/" className="no-underline w-auto">
-          <h2 className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto">
+          <h2
+            className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto"
+          >
             {title}
           </h2>
         </NavLink>
+      </div>
+      <div className={`${styles["thumbnail-wrapper"]}`} onClick={handleOpen}>
+        <span className={`${info ? "bg-[#ff9800]" : "bg-teal-600"}`}>
+          <ZoomOutMapIcon />
+        </span>
+        <img src={thumbnail} alt="project-thumbnail" className="mb-4" />
+      </div>
+      <div className="flex flex-col">
         {hasBadges && (
           <div className="inline-flex items-center mb-3 flex-wrap">
             {badges?.map((badge, i) => {
@@ -70,23 +87,27 @@ const ProjectCard = ({ title, demo, thumbnail, hasBadges, badges }) => {
             })}
           </div>
         )}
+        {!info && (
+          <a
+            href={demo}
+            className="no-underline"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Button variant="outlined">
+              <strong className="uppercase leading-normal">website</strong>
+            </Button>
+          </a>
+        )}
+        {info && (
+          <Button variant="contained" color="secondary" className="w-max">
+            <ReportGmailerrorred fontSize="medium" />
+            <strong className="uppercase leading-normal ml-2">
+              working progress
+            </strong>
+          </Button>
+        )}
       </div>
-      <div className={styles["thumbnail-wrapper"]} onClick={handleOpen}>
-        <span>
-          <ZoomOutMapIcon />
-        </span>
-        <img src={thumbnail} alt="project-thumbnail" className="mb-4" />
-      </div>
-      <a href={demo} className="no-underline" rel="noreferrer" target="_blank">
-        <Button variant="outlined">
-          <strong className="uppercase leading-normal">website</strong>
-        </Button>
-      </a>
-      {/* <NavLink to="/" className="no-underline">
-        <Button variant="outlined">
-          <strong className="uppercase leading-normal">more</strong>
-        </Button>
-      </NavLink> */}
       {modal}
     </div>
   );

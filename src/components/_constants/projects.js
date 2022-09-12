@@ -1,5 +1,36 @@
 export const AllProjects = [
   {
+    title: "Password Generator",
+    info: "working-progress",
+    demo: "https://airflix.herokuapp.com",
+    thumbnail: "under-construction.jpg",
+    badges: [
+      {
+        title: "ReactJS",
+        src: "logo.svg",
+        id: "mouse-over-popover",
+        theme: "dark",
+      },
+      {
+        title: "Material UI",
+        src: "materialui.svg",
+        id: "mouse-over-popover4",
+        theme: "dark",
+      },
+      {
+        title: "Bootstrap 5",
+        src: "bootstrap5.svg",
+        id: "mouse-over-popover5",
+      },
+      {
+        title: "Vite",
+        src: "vite.svg",
+        id: "mouse-over-popover6",
+        theme: "dark",
+      },
+    ],
+  },
+  {
     title: "Airflix",
     demo: "https://airflix.herokuapp.com",
     thumbnail: "airflix.jpg",
