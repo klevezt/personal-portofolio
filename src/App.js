@@ -26,9 +26,9 @@ function App() {
         <BackgroundAnimation />
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/personal-portofolio" element={<Home />} />
+          <Route path="/personal-portofolio/about" element={<About />} />
+          <Route path="/personal-portofolio/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </div>
