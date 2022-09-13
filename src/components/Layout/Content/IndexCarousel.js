@@ -9,7 +9,7 @@ function IndexCarousel() {
     <Box className={styles["kp-index-slider-wrapper"]}>
       <div className="absolute top-32 left-[5vw] right-[5vw] text-center md:left-1/2 md:-translate-x-1/2 h-auto text-white font-custom ">
         <h1 className="text-6xl sm:text-6xl md:text-[7vw]">Make it work.</h1>
-        <h1 className="text-4xl sm:text-4xl md:text-[4vw]">Make it right.</h1>
+        <h1 className="text-4xl sm:text-4xl md:text-[4vw] mb-4">Make it right.</h1>
         <h1 className="text-4xl sm:text-4xl md:text-[4vw]">Make it fast.</h1>
       </div>
 

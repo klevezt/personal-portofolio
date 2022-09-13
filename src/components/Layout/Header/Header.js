@@ -34,7 +34,7 @@ const Header = () => {
                     to={"/projects"}
                     className="mx-2 text-slate-50 hover:text-black no-underline "
                   >
-                    My Projects
+                    Projects
                   </NavLink>
                 </li>
               </ul>

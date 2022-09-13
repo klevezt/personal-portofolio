@@ -21,7 +21,7 @@ export const heroCarouselItems = [
     label: "Tailwind",
     imgPath: "tailwind-css-2.svg",
     description:
-      "Tailwind CSS makes it quicker to write and maintain the code of your application. By using this utility-first framework, you can use utility classes to control the padding, margin, color, font, shadow, and more of your application.",
+      "Tailwind CSS makes it quicker to write and maintain the code of your application by using utility classes to control the padding, margin, color, font, and more of your application.",
   },
   {
     label: "Bootstrap 5",
@@ -50,7 +50,7 @@ export const heroCarouselItems = [
     label: "Heroku",
     imgPath: "heroku.svg",
     description:
-      "Heroku is a platform as a service based on a managed container system, with integrated data services and a powerful ecosystem, for deploying and running modern apps.",
+      "Heroku is a platform as a service based on a managed container system for deploying and running modern apps.",
   },
 
   // {

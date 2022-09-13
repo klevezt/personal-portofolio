@@ -90,7 +90,7 @@ const ProjectCard = ({
         {!info && (
           <a
             href={demo}
-            className="no-underline"
+            className="no-underline w-max"
             rel="noreferrer"
             target="_blank"
           >

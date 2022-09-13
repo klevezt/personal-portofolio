@@ -1,9 +1,46 @@
 export const AllProjects = [
   {
-    title: "Password Generator",
+    title: "Movie Picker",
     info: "working-progress",
-    demo: "https://airflix.herokuapp.com",
+    // demo: "https://klevezt.github.io/password-generator/",
     thumbnail: "under-construction.jpg",
+    badges: [
+      {
+        title: "ReactJS",
+        src: "logo.svg",
+        id: "mouse-over-popover",
+        theme: "dark",
+      },
+      // {
+      //   title: "Material UI",
+      //   src: "materialui.svg",
+      //   id: "mouse-over-popover4",
+      //   theme: "dark",
+      // },
+      // {
+      //   title: "Tailwind CSS",
+      //   src: "tailwindcss-48.png",
+      //   id: "mouse-over-popover5",
+      //   theme: "dark",
+      // },
+      // {
+      //   title: "Vite",
+      //   src: "vite.svg",
+      //   id: "mouse-over-popover6",
+      //   theme: "dark",
+      // },
+      // {
+      //   title: "Github Pages",
+      //   src: "github.svg",
+      //   id: "mouse-over-popover7",
+      // },
+    ],
+  },
+  {
+    title: "Password Generator",
+    // info: "working-progress",
+    demo: "https://klevezt.github.io/password-generator/",
+    thumbnail: "password-generator.jpg",
     badges: [
       {
         title: "ReactJS",
@@ -18,15 +55,21 @@ export const AllProjects = [
         theme: "dark",
       },
       {
-        title: "Bootstrap 5",
-        src: "bootstrap5.svg",
+        title: "Tailwind CSS",
+        src: "tailwindcss-48.png",
         id: "mouse-over-popover5",
+        theme: "dark",
       },
       {
         title: "Vite",
         src: "vite.svg",
         id: "mouse-over-popover6",
         theme: "dark",
+      },
+      {
+        title: "Github Pages",
+        src: "github.svg",
+        id: "mouse-over-popover7",
       },
     ],
   },
