@@ -1,5 +1,41 @@
 export const AllProjects = [
   {
+    title: "Pin-Pet",
+    info: "working-progress",
+    thumbnail: "assets/images/under-construction.jpg",
+    badges: [
+      {
+        title: "ReactJS",
+        src: "assets/images/logo.svg",
+        id: "mouse-over-popover",
+        theme: "dark",
+      },
+      // {
+      //   title: "Material UI",
+      //   src: "assets/images/materialui.svg",
+      //   id: "mouse-over-popover4",
+      //   theme: "dark",
+      // },
+      {
+        title: "Tailwind CSS",
+        src: "assets/images/tailwindcss-48.png",
+        id: "mouse-over-popover5",
+        theme: "dark",
+      },
+      {
+        title: "Vite",
+        src: "assets/images/vite.svg",
+        id: "mouse-over-popover6",
+        theme: "dark",
+      },
+      {
+        title: "Github Pages",
+        src: "assets/images/github.svg",
+        id: "mouse-over-popover7",
+      },
+    ],
+  },
+  {
     title: "Movie Picker",
     info: "working-progress",
     // demo: "https://klevezt.github.io/password-generator/",
