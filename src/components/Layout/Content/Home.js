@@ -29,7 +29,7 @@ const Home = () => {
             width: "100%",
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            backgroundImage: "url(daniel-josef-AMssSjUaTY4-unsplash.jpg)",
+            backgroundImage: "url(assets/images/daniel-josef-AMssSjUaTY4-unsplash.jpg)",
             zIndex: "-1",
           }}
           alt="index-banner"

@@ -3,35 +3,35 @@ export const AllProjects = [
     title: "Movie Picker",
     info: "working-progress",
     // demo: "https://klevezt.github.io/password-generator/",
-    thumbnail: "under-construction.jpg",
+    thumbnail: "assets/images/under-construction.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       // {
       //   title: "Material UI",
-      //   src: "materialui.svg",
+      //   src: "assets/images/materialui.svg",
       //   id: "mouse-over-popover4",
       //   theme: "dark",
       // },
       // {
       //   title: "Tailwind CSS",
-      //   src: "tailwindcss-48.png",
+      //   src: "assets/images/tailwindcss-48.png",
       //   id: "mouse-over-popover5",
       //   theme: "dark",
       // },
       // {
       //   title: "Vite",
-      //   src: "vite.svg",
+      //   src: "assets/images/vite.svg",
       //   id: "mouse-over-popover6",
       //   theme: "dark",
       // },
       // {
       //   title: "Github Pages",
-      //   src: "github.svg",
+      //   src: "assets/images/github.svg",
       //   id: "mouse-over-popover7",
       // },
     ],
@@ -40,35 +40,35 @@ export const AllProjects = [
     title: "Password Generator",
     // info: "working-progress",
     demo: "https://klevezt.github.io/password-generator/",
-    thumbnail: "password-generator.jpg",
+    thumbnail: "assets/images/password-generator.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "Material UI",
-        src: "materialui.svg",
+        src: "assets/images/materialui.svg",
         id: "mouse-over-popover4",
         theme: "dark",
       },
       {
         title: "Tailwind CSS",
-        src: "tailwindcss-48.png",
+        src: "assets/images/tailwindcss-48.png",
         id: "mouse-over-popover5",
         theme: "dark",
       },
       {
         title: "Vite",
-        src: "vite.svg",
+        src: "assets/images/vite.svg",
         id: "mouse-over-popover6",
         theme: "dark",
       },
       {
         title: "Github Pages",
-        src: "github.svg",
+        src: "assets/images/github.svg",
         id: "mouse-over-popover7",
       },
     ],
@@ -76,40 +76,40 @@ export const AllProjects = [
   {
     title: "Airflix",
     demo: "https://airflix.herokuapp.com",
-    thumbnail: "airflix.jpg",
+    thumbnail: "assets/images/airflix.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "NodeJS",
-        src: "nodejs.svg",
+        src: "assets/images/nodejs.svg",
         id: "mouse-over-popover2",
         theme: "dark",
       },
       {
         title: "MongoDB",
-        src: "mongodb.svg",
+        src: "assets/images/mongodb.svg",
         id: "mouse-over-popover3",
         theme: "dark",
       },
       {
         title: "Material UI",
-        src: "materialui.svg",
+        src: "assets/images/materialui.svg",
         id: "mouse-over-popover4",
         theme: "dark",
       },
       {
         title: "Bootstrap 5",
-        src: "bootstrap5.svg",
+        src: "assets/images/bootstrap5.svg",
         id: "mouse-over-popover5",
       },
       {
         title: "Heroku",
-        src: "heroku.svg",
+        src: "assets/images/heroku.svg",
         id: "mouse-over-popover6",
         theme: "dark",
       },
@@ -118,17 +118,17 @@ export const AllProjects = [
   {
     title: "E-shop Clone",
     demo: "https://e-shop-clone.web.app/",
-    thumbnail: "eshop.jpg",
+    thumbnail: "assets/images/eshop.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "Firebase",
-        src: "firebase.svg",
+        src: "assets/images/firebase.svg",
         id: "mouse-over-popover2",
         theme: "dark",
       },
@@ -137,17 +137,17 @@ export const AllProjects = [
   {
     title: "Netflix Clone",
     demo: "https://kplc-netflix-clone.web.app/",
-    thumbnail: "netflix.jpg",
+    thumbnail: "assets/images/netflix.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "Firebase",
-        src: "firebase.svg",
+        src: "assets/images/firebase.svg",
         id: "mouse-over-popover2",
         theme: "dark",
       },
@@ -156,17 +156,17 @@ export const AllProjects = [
   {
     title: "Spotify Clone",
     demo: "https://kplc-spotify-clone.web.app/",
-    thumbnail: "spotify.jpg",
+    thumbnail: "assets/images/spotify.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "Firebase",
-        src: "firebase.svg",
+        src: "assets/images/firebase.svg",
         id: "mouse-over-popover2",
         theme: "dark",
       },
@@ -175,17 +175,17 @@ export const AllProjects = [
   {
     title: "LinkedIn Clone",
     demo: "https://kplc-linkedin-clone.web.app/",
-    thumbnail: "linkedin.jpg",
+    thumbnail: "assets/images/linkedin.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "Firebase",
-        src: "firebase.svg",
+        src: "assets/images/firebase.svg",
         id: "mouse-over-popover2",
         theme: "dark",
       },
@@ -194,17 +194,17 @@ export const AllProjects = [
   {
     title: "Amazon Clone",
     demo: "https://kp-d5b02.web.app/",
-    thumbnail: "amazon.jpg",
+    thumbnail: "assets/images/amazon.jpg",
     badges: [
       {
         title: "ReactJS",
-        src: "logo.svg",
+        src: "assets/images/logo.svg",
         id: "mouse-over-popover",
         theme: "dark",
       },
       {
         title: "Firebase",
-        src: "firebase.svg",
+        src: "assets/images/firebase.svg",
         id: "mouse-over-popover2",
         theme: "dark",
       },
@@ -216,16 +216,16 @@ export const HomeProjects = [
   {
     title: "Airflix",
     demo: "https://airflix.herokuapp.com",
-    thumbnail: "airflix.jpg",
+    thumbnail: "assets/images/airflix.jpg",
   },
   {
     title: "E-shop Clone",
     demo: "https://e-shop-clone.web.app/",
-    thumbnail: "eshop.jpg",
+    thumbnail: "assets/images/eshop.jpg",
   },
   {
     title: "Netflix Clone",
     demo: "https://kplc-netflix-clone.web.app/",
-    thumbnail: "netflix.jpg",
+    thumbnail: "assets/images/netflix.jpg",
   },
 ];

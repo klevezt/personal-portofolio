@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import albanianFlag from "../../../albanian_flag.png";
-import greeceFlag from "../../../greece_flag.png";
-import uowmFlag from "../../../uowm.png";
 
 const PersonalDescription = () => {
   const [age, setAge] = useState();
@@ -22,7 +19,7 @@ const PersonalDescription = () => {
       with all the projects I have worked on. <br />My name is{" "}
       <strong>Klevest Palucaj</strong> and I was born in Albania
       <img
-        src={albanianFlag}
+        src="assets/images/albanian_flag.png"
         alt="albanian-flag"
         className="inline mx-2"
         width={25}
@@ -31,7 +28,7 @@ const PersonalDescription = () => {
       <br />
       I have been living my whole life in Greece
       <img
-        src={greeceFlag}
+        src="assets/images/greece_flag.png"
         alt="greece-flag"
         className="inline mx-2"
         width={25}
@@ -43,7 +40,7 @@ const PersonalDescription = () => {
       </strong>
       <a href="https://ece.uowm.gr/" target="_blank" rel="noreferrer">
         <img
-          src={uowmFlag}
+          src="assets/images/uowm.png"
           alt="greece-flag"
           className="inline mx-2"
           width={25}

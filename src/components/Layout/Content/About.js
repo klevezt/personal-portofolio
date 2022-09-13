@@ -1,11 +1,9 @@
 import React from "react";
 import { Button, Container, Toolbar } from "@mui/material";
 import MainBlock from "../../hoc/MainBlock";
-import dummy from "../../../IMG_20210111_143254.jpg";
 import PersonalDescription from "./PersonalDescription";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import freelanceIcon from "../../../freelancer-icon.svg";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import EducationDescription from "./EducationDescription";
 import styles from "./About.module.css";
@@ -31,7 +29,7 @@ const About = () => {
         <div className="col-12 col-md-4 col-lg-3">
           <MainBlock className="p-0 sticky top-20 sm:w-3/4 md:w-full m-auto mb-5 ">
             <img
-              src={dummy}
+              src={"assets/images/IMG_20210111_143254.jpg"}
               alt="profile"
               className={styles["personal-image"]}
             />
@@ -73,7 +71,7 @@ const About = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={freelanceIcon} alt="freelance-icon" width={20} />
+                  <img src={"assets/images/freelancer-icon.svg"} alt="freelance-icon" width={20} />
                 </a>
               </div>
               {/* <hr className="my-6 opacity-20 w-50 mx-auto" /> */}
