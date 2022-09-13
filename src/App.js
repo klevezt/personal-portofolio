@@ -1,7 +1,6 @@
 import "./App.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { teal } from "@mui/material/colors";
-import { Toolbar } from "@mui/material";
 import BackgroundAnimation from "./components/UI/Animations/BackgroundAnimation";
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer/Footer";
@@ -26,9 +25,9 @@ function App() {
         <BackgroundAnimation />
         <Header />
         <Routes>
-          <Route path="/personal-portofolio" element={<Home />} />
-          <Route path="/personal-portofolio/about" element={<About />} />
-          <Route path="/personal-portofolio/projects" element={<Projects />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </div>
