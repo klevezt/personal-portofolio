@@ -1,7 +1,6 @@
 {
   "name": "personal-portofolio",
   "version": "0.1.0",
-  "homepage": "http://klevezt.github.io/personal-portofolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
