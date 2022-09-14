@@ -75,7 +75,7 @@ export const AllProjects = [
   {
     title: "Password Generator",
     // info: "working-progress",
-    demo: "https://klevezt.github.io/password-generator/",
+    demo: "https://generator.kpwork.site",
     thumbnail: "assets/images/password-generator.jpg",
     badges: [
       {
@@ -229,7 +229,7 @@ export const AllProjects = [
   },
   {
     title: "Amazon Clone",
-    demo: "https://kp-d5b02.web.app/",
+    demo: "https://amazon.kpwork.site/",
     thumbnail: "assets/images/amazon.jpg",
     badges: [
       {
