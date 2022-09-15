@@ -239,10 +239,14 @@ export const AllProjects = [
         theme: "dark",
       },
       {
-        title: "Firebase",
-        src: "assets/images/firebase.svg",
+        title: "React Router",
+        src: "assets/images/react-router.svg",
         id: "mouse-over-popover2",
-        theme: "dark",
+      },
+      {
+        title: "Github Pages",
+        src: "assets/images/github.svg",
+        id: "mouse-over-popover2",
       },
     ],
   },
