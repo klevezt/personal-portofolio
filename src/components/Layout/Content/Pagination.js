@@ -1,7 +1,7 @@
 import React from "react";
-import classnames from "classnames";
 import { usePagination, DOTS } from "../../_hooks/usePagination";
-import "./pagination.css";
+import styles from "./pagination.css";
+
 const Pagination = (props) => {
   const {
     onPageChange,
@@ -33,81 +33,34 @@ const Pagination = (props) => {
 
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
-    <ul
-      className={classnames("pagination-container", { [className]: className })}
-    >
-      {/* <nav aria-label="Page navigation example">
-            <ul className="pagination m-0 flex justify-center">
-              <li className="page-item">
-                <button
-                  className="page-link"
-                  onClick={() => {
-                    setPage((s) => s + 1);
-                  }}
-                >
-                  <span aria-hidden="true">&laquo;</span>
-                </button>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="#">
-                  1
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="#">
-                  2
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="#">
-                  3
-                </a>
-              </li>
-              <li className="page-item">
-                <button
-                  className="page-link"
-                  onClick={() => {
-                    setPage((s) => s + 1);
-                  }}
-                >
-                  <span aria-hidden="true">&raquo;</span>
-                </button>
-              </li>
-            </ul>
-          </nav> */}
-      <li
-        className={classnames("pagination-item", {
-          disabled: currentPage === 1,
-        })}
-        onClick={onPrevious}
-      >
-        <div className="arrow left" />
-      </li>
-      {paginationRange.map((pageNumber) => {
-        if (pageNumber === DOTS) {
-          return <li className="pagination-item dots">&#8230;</li>;
-        }
+    <nav aria-label="Page navigation example">
+      <ul className="pagination m-0 flex justify-center">
+        <li className="page-item" onClick={onPrevious}>
+          <button className="page-link">
+            <span aria-hidden="true">&laquo;</span>
+          </button>
+        </li>
+        {paginationRange.map((pageNumber) => {
+          if (pageNumber === DOTS) {
+            return <li className={styles["page-item"]}>&#8230;</li>;
+          }
 
-        return (
-          <li
-            className={classnames("pagination-item", {
-              selected: pageNumber === currentPage,
-            })}
-            onClick={() => onPageChange(pageNumber)}
-          >
-            {pageNumber}
-          </li>
-        );
-      })}
-      <li
-        className={classnames("pagination-item", {
-          disabled: currentPage === lastPage,
+          return (
+            <li
+              className={styles["page-item"]}
+              onClick={() => onPageChange(pageNumber)}
+            >
+              <button className="page-link"> {pageNumber}</button>
+            </li>
+          );
         })}
-        onClick={onNext}
-      >
-        <div className="arrow right" />
-      </li>
-    </ul>
+        <li className={styles["page-item"]} onClick={onNext}>
+          <button className="page-link">
+            <span aria-hidden="true">&raquo;</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
