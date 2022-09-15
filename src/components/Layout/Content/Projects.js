@@ -51,7 +51,10 @@ const Projects = () => {
           <Button
             variant="outlined"
             color={showWorkingProjects ? "primary" : "secondary"}
-            onClick={() => setShowWorkingProjects((s) => !s)}
+            onClick={() => {
+              setPage(1);
+              setShowWorkingProjects((s) => !s);
+            }}
           >
             {showWorkingProjects ? (
               <strong className="ml-2">View all projects</strong>

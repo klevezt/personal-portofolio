@@ -71,7 +71,11 @@ const About = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={"assets/images/freelancer-icon.svg"} alt="freelance-icon" width={20} />
+                  <img
+                    src={"assets/images/freelancer-icon.svg"}
+                    alt="freelance-icon"
+                    width={20}
+                  />
                 </a>
               </div>
               {/* <hr className="my-6 opacity-20 w-50 mx-auto" /> */}
@@ -85,6 +89,12 @@ const About = () => {
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
               Licenses & certifications
             </h2>
+            <hr className="my-6 opacity-20" />
+            <div className="row mx-0">
+              <div className="col-4"></div>
+              <div className="col-4"></div>
+              <div className="col-4"></div>
+            </div>
           </MainBlock>
         </div>
       </div>
