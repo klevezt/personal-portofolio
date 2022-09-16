@@ -144,6 +144,11 @@ export const AllProjects = [
         id: "mouse-over-popover5",
       },
       {
+        title: "React Router",
+        src: "assets/images/react-router.svg",
+        id: "mouse-over-popover2",
+      },
+      {
         title: "Heroku",
         src: "assets/images/heroku.svg",
         id: "mouse-over-popover6",
