@@ -83,7 +83,7 @@ const About = () => {
           </MainBlock>
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-12">
           <MainBlock>
             <h2 className="text-2xl font-bold text-teal-600 uppercase">
@@ -97,7 +97,7 @@ const About = () => {
             </div>
           </MainBlock>
         </div>
-      </div>
+      </div> */}
       <Toolbar id="back-to-top-anchor" />
     </Container>
   );
