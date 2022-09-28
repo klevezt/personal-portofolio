@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Container, Toolbar } from "@mui/material";
 import MainBlock from "../../hoc/MainBlock";
 import ProjectCard from "../../UI/Cards/ProjectCard";
-import IndexCarousel from "./IndexCarousel";
+import IndexCarousel from "./IndexCarousel/IndexCarousel";
 import { NavLink } from "react-router-dom";
 import { HomeProjects } from "../../_constants/projects";
 

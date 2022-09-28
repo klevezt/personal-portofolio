@@ -36,10 +36,11 @@ export const AllProjects = [
     ],
   },
   {
-    title: "Movie Picker",
-    info: "working-progress",
-    // demo: "https://klevezt.github.io/password-generator/",
-    thumbnail: "assets/images/under-construction.jpg",
+    title: "Movie Pick",
+    // info: "working-progress",
+    demo: "https://movie-pick.kpwork.site/",
+    thumbnail: "assets/images/movie-pick.jpg",
+    updatedAt: "28/09/22",
     badges: [
       {
         title: "ReactJS",
@@ -47,29 +48,38 @@ export const AllProjects = [
         id: "mouse-over-popover",
         theme: "dark",
       },
-      // {
-      //   title: "Material UI",
-      //   src: "assets/images/materialui.svg",
-      //   id: "mouse-over-popover4",
-      //   theme: "dark",
-      // },
-      // {
-      //   title: "Tailwind CSS",
-      //   src: "assets/images/tailwindcss-48.png",
-      //   id: "mouse-over-popover5",
-      //   theme: "dark",
-      // },
-      // {
-      //   title: "Vite",
-      //   src: "assets/images/vite.svg",
-      //   id: "mouse-over-popover6",
-      //   theme: "dark",
-      // },
-      // {
-      //   title: "Github Pages",
-      //   src: "assets/images/github.svg",
-      //   id: "mouse-over-popover7",
-      // },
+      {
+        title: "Redux",
+        src: "assets/images/redux.svg",
+        id: "mouse-over-popover2",
+      },
+      {
+        title: "Material UI",
+        src: "assets/images/materialui.svg",
+        id: "mouse-over-popover3",
+        theme: "dark",
+      },
+      {
+        title: "Bootstrap 5",
+        src: "assets/images/bootstrap5.svg",
+        id: "mouse-over-popover4",
+      },
+      {
+        title: "React Router",
+        src: "assets/images/react-router.svg",
+        id: "mouse-over-popover5",
+      },
+      {
+        title: "Tailwind CSS",
+        src: "assets/images/tailwindcss-48.png",
+        id: "mouse-over-popover6",
+        theme: "dark",
+      },
+      {
+        title: "Github Pages",
+        src: "assets/images/github.svg",
+        id: "mouse-over-popover7",
+      },
     ],
   },
   {
@@ -77,6 +87,7 @@ export const AllProjects = [
     // info: "working-progress",
     demo: "https://generator.kpwork.site",
     thumbnail: "assets/images/password-generator.jpg",
+    updatedAt: "19/09/22",
     badges: [
       {
         title: "ReactJS",
@@ -113,6 +124,7 @@ export const AllProjects = [
     title: "Airflix",
     demo: "https://airflix.herokuapp.com",
     thumbnail: "assets/images/airflix.jpg",
+    updatedAt: "18/09/22",
     badges: [
       {
         title: "ReactJS",
@@ -160,6 +172,7 @@ export const AllProjects = [
     title: "E-shop Clone",
     demo: "https://e-shop-clone.web.app/",
     thumbnail: "assets/images/eshop.jpg",
+    updatedAt: "27/01/21",
     badges: [
       {
         title: "ReactJS",
@@ -179,6 +192,7 @@ export const AllProjects = [
     title: "Netflix Clone",
     demo: "https://kplc-netflix-clone.web.app/",
     thumbnail: "assets/images/netflix.jpg",
+    updatedAt: "18/01/21",
     badges: [
       {
         title: "ReactJS",
@@ -198,6 +212,7 @@ export const AllProjects = [
     title: "Spotify Clone",
     demo: "https://kplc-spotify-clone.web.app/",
     thumbnail: "assets/images/spotify.jpg",
+    updatedAt: "07/01/21",
     badges: [
       {
         title: "ReactJS",
@@ -217,6 +232,7 @@ export const AllProjects = [
     title: "LinkedIn Clone",
     demo: "https://kplc-linkedin-clone.web.app/",
     thumbnail: "assets/images/linkedin.jpg",
+    updatedAt: "26/01/21",
     badges: [
       {
         title: "ReactJS",
@@ -236,6 +252,7 @@ export const AllProjects = [
     title: "Amazon Clone",
     demo: "https://amazon.kpwork.site/",
     thumbnail: "assets/images/amazon.jpg",
+    updatedAt: "15/09/22",
     badges: [
       {
         title: "ReactJS",

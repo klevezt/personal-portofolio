@@ -13,6 +13,7 @@ const ProjectCard = ({
   demo,
   thumbnail,
   hasBadges,
+  updatedAt,
   badges,
   info = null,
 }) => {
@@ -57,9 +58,7 @@ const ProjectCard = ({
     <div className="mb-3 p-2.5 md:p-6 bg-white rounded border-teal-500 shadow min-h-[200px]">
       <div className="flex flex-wrap">
         <NavLink to="/" className="no-underline w-auto">
-          <h2
-            className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto"
-          >
+          <h2 className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto">
             {title}
           </h2>
         </NavLink>
@@ -87,26 +86,29 @@ const ProjectCard = ({
             })}
           </div>
         )}
-        {!info && (
-          <a
-            href={demo}
-            className="no-underline w-max"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <Button variant="outlined">
-              <strong className="uppercase leading-normal">website</strong>
+        <div className="flex flex-wrap justify-between items-end">
+          {!info && (
+            <a
+              href={demo}
+              className="no-underline w-max"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Button variant="outlined">
+                <strong className="uppercase leading-normal">website</strong>
+              </Button>
+            </a>
+          )}
+          {info && (
+            <Button variant="contained" color="secondary" className="w-max">
+              <ReportGmailerrorred fontSize="medium" />
+              <strong className="uppercase leading-normal ml-2">
+                working progress
+              </strong>
             </Button>
-          </a>
-        )}
-        {info && (
-          <Button variant="contained" color="secondary" className="w-max">
-            <ReportGmailerrorred fontSize="medium" />
-            <strong className="uppercase leading-normal ml-2">
-              working progress
-            </strong>
-          </Button>
-        )}
+          )}
+          {updatedAt && <strong className="text-[9px] m-0">Last Update: {updatedAt}</strong>}
+        </div>
       </div>
       {modal}
     </div>

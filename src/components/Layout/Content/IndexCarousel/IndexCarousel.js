@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import styles from "./IndexCarousel.module.css";
 import Carousel from "react-bootstrap/Carousel";
-import { heroCarouselItems } from "../../_constants/carousel";
+import { heroCarouselItems } from "../../../_constants/carousel";
 
 function IndexCarousel() {
   return (

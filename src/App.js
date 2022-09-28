@@ -5,7 +5,7 @@ import BackgroundAnimation from "./components/UI/Animations/BackgroundAnimation"
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
-import About from "./components/Layout/Content/About";
+import About from "./components/Layout/Content/About/About";
 import Home from "./components/Layout/Content/Home";
 import Projects from "./components/Layout/Content/Projects";
 

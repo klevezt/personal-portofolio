@@ -1,11 +1,11 @@
 import React from "react";
 import { Button, Container, Toolbar } from "@mui/material";
-import MainBlock from "../../hoc/MainBlock";
-import PersonalDescription from "./PersonalDescription";
+import MainBlock from "../../../hoc/MainBlock";
+import PersonalDescription from "../PersonalDescription";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import EducationDescription from "./EducationDescription";
+import EducationDescription from "../EducationDescription";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -83,21 +83,6 @@ const About = () => {
           </MainBlock>
         </div>
       </div>
-      {/* <div className="row">
-        <div className="col-12">
-          <MainBlock>
-            <h2 className="text-2xl font-bold text-teal-600 uppercase">
-              Licenses & certifications
-            </h2>
-            <hr className="my-6 opacity-20" />
-            <div className="row mx-0">
-              <div className="col-4"></div>
-              <div className="col-4"></div>
-              <div className="col-4"></div>
-            </div>
-          </MainBlock>
-        </div>
-      </div> */}
       <Toolbar id="back-to-top-anchor" />
     </Container>
   );
