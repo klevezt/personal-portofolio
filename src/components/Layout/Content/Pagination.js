@@ -1,7 +1,6 @@
 import { PaginationItem } from "@mui/material";
 import React from "react";
-import { usePagination, DOTS } from "../../_hooks/usePagination";
-import styles from "./pagination.module.css";
+import { usePagination } from "../../_hooks/usePagination";
 import PaginationBlock from "@mui/material/Pagination";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";

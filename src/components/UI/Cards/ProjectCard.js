@@ -107,7 +107,11 @@ const ProjectCard = ({
               </strong>
             </Button>
           )}
-          {updatedAt && <strong className="text-[9px] m-0">Last Update: {updatedAt}</strong>}
+          {updatedAt && (
+            <strong className="text-[8px] m-0 text-teal-600">
+              Last Update: {updatedAt}
+            </strong>
+          )}
         </div>
       </div>
       {modal}
