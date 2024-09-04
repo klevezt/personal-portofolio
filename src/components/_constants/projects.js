@@ -38,7 +38,7 @@ export const AllProjects = [
   {
     title: "Movie Picker",
     info: "working-progress",
-    // demo: "https://klevezt.github.io/password-generator/",
+    demo: "https://movie-picker-iota.vercel.app/",
     thumbnail: "assets/images/under-construction.jpg",
     badges: [
       {
@@ -75,7 +75,7 @@ export const AllProjects = [
   {
     title: "Password Generator",
     // info: "working-progress",
-    demo: "https://generator.kpwork.site",
+    demo: "https://password-generator-seven-tawny.vercel.app/",
     thumbnail: "assets/images/password-generator.jpg",
     badges: [
       {
