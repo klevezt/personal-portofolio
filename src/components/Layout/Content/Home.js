@@ -2,9 +2,10 @@ import React from "react";
 import { Button, Container, Toolbar } from "@mui/material";
 import MainBlock from "../../hoc/MainBlock";
 import ProjectCard from "../../UI/Cards/ProjectCard";
-import IndexCarousel from "./IndexCarousel";
+import IndexCarousel from "./IndexCarousel/IndexCarousel";
 import { NavLink } from "react-router-dom";
 import { HomeProjects } from "../../_constants/projects";
+import Adsense from "../../_ads/Adsense";
 
 const Home = () => {
   const allProjects = HomeProjects.map((project, i) => {
@@ -29,7 +30,8 @@ const Home = () => {
             width: "100%",
             backgroundSize: "cover",
             backgroundPosition: "center center",
-            backgroundImage: "url(assets/images/daniel-josef-AMssSjUaTY4-unsplash.jpg)",
+            backgroundImage:
+              "url(assets/images/daniel-josef-AMssSjUaTY4-unsplash.jpg)",
             zIndex: "-1",
           }}
           alt="index-banner"
@@ -38,6 +40,10 @@ const Home = () => {
       </div>
 
       <Container maxWidth="xl" className="pt-20 ">
+        <div className="row">
+          <Adsense />
+        </div>
+
         <div className="row">
           <div className="col-12">
             <MainBlock>
@@ -48,7 +54,10 @@ const Home = () => {
 
               <div className="row">{allProjects}</div>
               <div className="row mt-4">
-                <NavLink to="/projects" className="no-underline d-flex justify-center m-auto w-auto">
+                <NavLink
+                  to="/projects"
+                  className="no-underline d-flex justify-center m-auto w-auto"
+                >
                   <Button variant="contained" className="">
                     <strong className="uppercase leading-normal">
                       View all projects

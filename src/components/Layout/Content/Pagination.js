@@ -1,6 +1,9 @@
+import { PaginationItem } from "@mui/material";
 import React from "react";
-import { usePagination, DOTS } from "../../_hooks/usePagination";
-import styles from "./pagination.module.css";
+import { usePagination } from "../../_hooks/usePagination";
+import PaginationBlock from "@mui/material/Pagination";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Pagination = (props) => {
   const {
@@ -23,44 +26,22 @@ const Pagination = (props) => {
     return null;
   }
 
-  const onNext = () => {
-    onPageChange(currentPage + 1);
-  };
-
-  const onPrevious = () => {
-    onPageChange(currentPage - 1);
-  };
-
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
-    <nav aria-label="Page navigation example">
-      <ul className="pagination m-0 flex justify-center">
-        <li className="page-item" onClick={onPrevious}>
-          <button className="page-link">
-            <span aria-hidden="true">&laquo;</span>
-          </button>
-        </li>
-        {paginationRange.map((pageNumber) => {
-          if (pageNumber === DOTS) {
-            return <li className={styles["page-item"]}>&#8230;</li>;
-          }
-
-          return (
-            <li
-              className={styles["page-item"]}
-              onClick={() => onPageChange(pageNumber)}
-            >
-              <button className="page-link"> {pageNumber}</button>
-            </li>
-          );
-        })}
-        <li className={styles["page-item"]} onClick={onNext}>
-          <button className="page-link">
-            <span aria-hidden="true">&raquo;</span>
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <div className="flex justify-center">
+      <PaginationBlock
+        shape="rounded"
+        size="small"
+        count={lastPage}
+        renderItem={(item) => (
+          <PaginationItem
+            components={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+            {...item}
+          />
+        )}
+        onChange={(e, page) => onPageChange(page)}
+      />
+    </div>
   );
 };
 

@@ -35,6 +35,7 @@ const Projects = () => {
           thumbnail={project.thumbnail}
           badges={project.badges}
           info={project.info}
+          updatedAt={project.updatedAt}
           hasBadges
         />
       </div>

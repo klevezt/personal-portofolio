@@ -13,7 +13,7 @@ const Header = () => {
               <ul className="pl-0 mb-0 uppercase">
                 <NavLink
                   to={"/"}
-                  className="mx-2 text-slate-50 hover:text-black no-underline"
+                  className="text-sm mx-2 text-slate-50 hover:text-black no-underline"
                 >
                   Home
                 </NavLink>
@@ -24,7 +24,7 @@ const Header = () => {
                 <li>
                   <NavLink
                     to={"/about"}
-                    className="mx-2 text-slate-50 hover:text-black no-underline"
+                    className="text-sm mx-2 text-slate-50 hover:text-black no-underline"
                   >
                     About
                   </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
                 <li>
                   <NavLink
                     to={"/projects"}
-                    className="mx-2 text-slate-50 hover:text-black no-underline "
+                    className="text-sm mx-2 text-slate-50 hover:text-black no-underline "
                   >
                     Projects
                   </NavLink>
