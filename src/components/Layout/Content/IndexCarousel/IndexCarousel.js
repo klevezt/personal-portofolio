@@ -14,12 +14,7 @@ function IndexCarousel() {
       </div>
 
       <div className="absolute bottom-0 left-[5vw] md:left-1/4 right-[5vw] md:right-1/4 h-auto text-white">
-        <Carousel
-          controls={false}
-          indicators={false}
-          interval={5000}
-          pause={false}
-        >
+        <Carousel controls={false} indicators={false} interval={5000} pause={false}>
           {heroCarouselItems.map((step, index) => (
             <Carousel.Item key={index} className="min-h-[250px]">
               <div className="flex justify-center items-center flex-col md:flex-row">
@@ -27,7 +22,7 @@ function IndexCarousel() {
                   src={step.imgPath}
                   alt={step.label}
                   style={{ width: 120, objectFit: "contain" }}
-                  className="mb-6 md:mb-0"
+                  className="mb-6 md:mb-0 border rounded-lg bg-white"
                 />
                 <div className="border-t-2 md:border-l-2 md:border-t-0 ml-8 p-8">
                   <h4>{step.label}</h4>

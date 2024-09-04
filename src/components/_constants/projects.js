@@ -75,8 +75,8 @@ export const AllProjects = [
         theme: "dark",
       },
       {
-        title: "Github Pages",
-        src: "assets/images/github.svg",
+        title: "Vercel",
+        src: "assets/images/vercel.svg",
         id: "mouse-over-popover7",
       },
     ],
@@ -113,8 +113,8 @@ export const AllProjects = [
         theme: "dark",
       },
       {
-        title: "Github Pages",
-        src: "assets/images/github.svg",
+        title: "Vercel",
+        src: "assets/images/vercel.svg",
         id: "mouse-over-popover7",
       },
     ],

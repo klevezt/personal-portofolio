@@ -6,10 +6,15 @@ export const heroCarouselItems = [
       "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.",
   },
   {
+    label: "Next.js",
+    imgPath: "assets/images/nextjs.svg",
+    description:
+      "The React Framework for the Web. Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",
+  },
+  {
     label: "NodeJS",
     imgPath: "assets/images/nodejs.svg",
-    description:
-      "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    description: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
   },
   {
     label: "MongoDB",
@@ -37,8 +42,7 @@ export const heroCarouselItems = [
   {
     label: "Firebase",
     imgPath: "assets/images/firebase.svg",
-    description:
-      "Firebase is an app development platform that helps you build and grow apps.",
+    description: "Firebase is an app development platform that helps you build and grow apps.",
   },
   {
     label: "Vite",
@@ -47,16 +51,9 @@ export const heroCarouselItems = [
       "Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.",
   },
   {
-    label: "Heroku",
-    imgPath: "assets/images/heroku.svg",
+    label: "Vercel",
+    imgPath: "assets/images/vercel.svg",
     description:
-      "Heroku is a platform as a service based on a managed container system for deploying and running modern apps.",
+      "Vercel's Frontend Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalized web.",
   },
-
-  // {
-  //   label: "Redux",
-  //   imgPath: "assets/images/redux.svg",
-  //   description:
-  //     "Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
-  // },
 ];
