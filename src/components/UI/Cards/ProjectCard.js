@@ -2,21 +2,12 @@ import { Close, ReportGmailerrorred } from "@mui/icons-material";
 import { Button, Fade, Backdrop, Modal } from "@mui/material";
 import React, { Fragment } from "react";
 import reactDom from "react-dom";
-import { NavLink } from "react-router-dom";
 import RoundedButton from "../Buttons/RoundedButton";
 import styles from "./ProjectCard.module.css";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 import PopoverUI from "../Popover/Popover";
 
-const ProjectCard = ({
-  title,
-  demo,
-  thumbnail,
-  hasBadges,
-  updatedAt,
-  badges,
-  info = null,
-}) => {
+const ProjectCard = ({ title, demo, thumbnail, hasBadges, updatedAt, badges, info = null }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -57,11 +48,11 @@ const ProjectCard = ({
   return (
     <div className="mb-3 p-2.5 md:p-6 bg-white rounded border-teal-500 shadow min-h-[200px]">
       <div className="flex flex-wrap">
-        <NavLink to="/" className="no-underline w-auto">
+        <a href={demo} className="no-underline w-max" rel="noreferrer" target="_blank">
           <h2 className="text-2xl mb-4 mr-3 text-teal-600 uppercase underline underline-offset-8 w-auto">
             {title}
           </h2>
-        </NavLink>
+        </a>
       </div>
       <div className={`${styles["thumbnail-wrapper"]}`} onClick={handleOpen}>
         <span className={`${info ? "bg-[#ff9800]" : "bg-teal-600"}`}>
@@ -88,12 +79,7 @@ const ProjectCard = ({
         )}
         <div className="flex flex-wrap justify-between items-end">
           {!info && (
-            <a
-              href={demo}
-              className="no-underline w-max"
-              rel="noreferrer"
-              target="_blank"
-            >
+            <a href={demo} className="no-underline w-max" rel="noreferrer" target="_blank">
               <Button variant="outlined">
                 <strong className="uppercase leading-normal">website</strong>
               </Button>
@@ -102,15 +88,11 @@ const ProjectCard = ({
           {info && (
             <Button variant="contained" color="secondary" className="w-max">
               <ReportGmailerrorred fontSize="medium" />
-              <strong className="uppercase leading-normal ml-2">
-                working progress
-              </strong>
+              <strong className="uppercase leading-normal ml-2">working progress</strong>
             </Button>
           )}
           {updatedAt && (
-            <strong className="text-[8px] m-0 text-teal-600">
-              Last Update: {updatedAt}
-            </strong>
+            <strong className="text-[8px] m-0 text-teal-600">Last Update: {updatedAt}</strong>
           )}
         </div>
       </div>

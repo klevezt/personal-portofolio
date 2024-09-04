@@ -38,7 +38,7 @@ export const AllProjects = [
   {
     title: "Movie Picker",
     info: "working-progress",
-    demo: "https://movie-picker-iota.vercel.app/",
+    // demo: "https://movie-picker-iota.vercel.app/",
     thumbnail: "assets/images/under-construction.jpg",
     badges: [
       {
